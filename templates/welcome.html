@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            ValueBuy
+        </title>
+        <style>
+
+            body{
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-image: url( "../static/images/pic7.jpg" )
+
+            }
+
+            .button {
+            display: flex;
+            height: 50px;
+            padding: 0;
+            background: #009578;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            overflow: hidden;
+            font-family: "Quicksand", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            }
+
+            .button:hover {
+            background: #008168;
+            }
+
+            .button:active {
+            background: #006e58;
+            }
+
+            .button__text,
+            .button__icon {
+            display: inline-flex;
+            align-items: center;
+            padding: 0 24px;
+            color: #fff;
+            height: 100%;
+            }
+
+            .button__icon {
+            font-size: 1.5em;
+            background: rgba(0, 0, 0, 0.08);
+            }
+
+        </style>
+
+    </head>
+    <body background="{{ url_for('static' , filename = "images/pic3.jpg")}}">
+        <h1> Logged-in successfully to ValueBuy!  <h1>
+        <h1> Welcome back, {{name}} </h1>
+        <!-- <h1> To ValueBuy </h1> -->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <a href="http://127.0.0.1:5000/homepage">
+
+        <button type="button" class="button">
+            <span class="button__text">Proceed to run queries</span>
+            <span class="button__icon">
+              <ion-icon name="cloud-download-outline"></ion-icon>
+            </span>
+        </button>
+        </a>
+
+          <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+
+    </body>
+</html>
