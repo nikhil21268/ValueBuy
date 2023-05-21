@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-image: url('/static/images/slider-bg.jpg');
+      background-position: center top;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      padding-top: 0px; /* adjust this value to push the content down */
+    }
+  </style>
+  <title>Admin Page - Employees</title>
+</head>
+<body>
+  <h1>Admin Page - Employees</h1>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    
+    td, th {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    </style>
+  <table>
+    <thead>
+      <tr>
+        <th>e_id</th>
+        <th>emp_name</th>
+        <th>base_salary</th>
+        <th>emp_street</th>
+        <th>emp_city</th>
+        <th>emp_state</th>
+        <th>emp_pin</th>
+        <th>emp_role</th>
+        <th>emp_type</th>
+        <th>increment</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for employee in employees %}
+      <tr>
+        <td>{{ employee.e_id }}</td>
+        <td>{{ employee.emp_name }}</td>
+        <td>{{ employee.base_salary }}</td>
+        <td>{{ employee.emp_street }}</td>
+        <td>{{ employee.emp_city }}</td>
+        <td>{{ employee.emp_state }}</td>
+        <td>{{ employee.emp_pin }}</td>
+        <td>{{ employee.emp_role }}</td>
+        <td>{{ employee.emp_type }}</td>
+        <td>{{ employee.increment }}</td>
+        <td>
+          <form action="{{ url_for('update_employee_increment', employee_id=employee.e_id) }}" method="POST">
+            <input type="number" id="increment" name="increment" value="{{ employee.increment }}"><br> <!-- new table data cell for increment column -->
+            <button type="submit">Save</button>
+          </form>
+        </td>
+        <td>
+          <form action="{{ url_for('delete_employee', employee_id=employee.e_id) }}" method="POST">
+            <button type="submit">Delete</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  
+  <h2>Add Employee</h2>
+  <form action="{{ url_for('add_employee') }}" method="POST">
+    <label for="emp_name">emp_name:</label>
+    <input type="text" id="emp_name" name="emp_name"><br>
+
+    <label for="base_salary">base_salary:</label>
+    <input type="number" id="base_salary" name="base_salary"><br>
+
+    <label for="emp_street">emp_street:</label>
+    <input type="text" id="emp_street" name="emp_street"><br>
+
+    <label for="emp_city">emp_city:</label>
+    <input type="text" id="emp_city" name="emp_city"><br>
+
+    <label for="emp_state">emp_state:</label>
+    <input type="text" id="emp_state" name="emp_state"><br>
+
+    <label for="emp_pin">emp_pin:</label>
+    <input type="number" id="emp_pin" name="emp_pin"><br>
+
+    <label for="emp_dob">emp_dob:</label>
+    <input type="date" id="emp_dob" name="emp_dob"><br>
+
+    <label for="emp_role">emp_role:</label>
+    <input type="text" id="emp_role" name="emp_role"><br>
+
+    <label for="emp_type">emp_type:</label>
+    <input type="text" id="emp_type" name="emp_type"><br>
+
+    <button type="submit">Add Employee</button>
+  </form>
+
+</body>
+</html>

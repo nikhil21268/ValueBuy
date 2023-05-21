@@ -1,0 +1,72 @@
+{% extends "/templates/base.html" %} 
+{% block title %} ValueBuy {% endblock %}
+
+{% block content %}
+    <h1 style="margin-left: 25px; margin-top: 25px; margin-bottom: 25px;"><b>Welcome to ValueBuy! </b></h1>
+
+    <p style="margin-left: 25px;"><b> Query displays the total count of each type of customer in descending order.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query1" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 1</a>
+    <br>
+    <p style="margin-left: 25px;"><b>This query generates the number of carts which have qty > 5.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query2" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 2</a>
+    <br>
+    <p style="margin-left: 25px;"><b>All premium customers who have ordered broccoli.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query3" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 3</a>
+    <br>
+    <p style="margin-left: 25px;"><b>All carts that have both the categories - clothing and consumables.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query4" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 4</a>
+    <br>
+    <p style="margin-left: 25px;"><b>Displays the oldest employee of the company - per role.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query5" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 5</a>
+    <br>
+    <p style="margin-left: 25px;"><b>Show all employees who have received a raise at least once.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query6" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 6</a>
+    <br>
+    <p style="margin-left: 25px;"><b>The average amount paid by a regular user.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query7" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 7</a>
+    <br>
+    <p style="margin-left: 25px;"><b>The average amount paid by a premium user.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query8" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 8</a>
+    <br>
+    <p style="margin-left: 25px;"><b>Display courier details - for delivered orders.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query9" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 9</a>
+    <br>
+    <!-- <p style="margin-left: 25px;">Increase the salary of all employees working for more than 6 years by 10000</p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query10" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 10</a> -->
+
+
+    <!-- OLAP queries -->
+
+    <p style="margin-left: 25px;"><b>OLAP query to display avg customer age per state, city, street - with rollup.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query11" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 11</a>
+    <br>
+    <p style="margin-left: 25px;"><b>OLAP query to display avg employee age per state, city, street - with rollup.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query12" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 12</a>
+    <br>
+    <p style="margin-left: 25px;"><b>OLAP query to display avg employee salary per state, city, street - with rollup & group by.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query13" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 13</a>
+    <br>
+    <p style="margin-left: 25px;"><b>OLAP query to display sum of employee salaries per state, city, street - with rollup & group by.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query14" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 14</a>
+    <br>
+    <p style="margin-left: 25px;"><b>OLAP query to display sum of employee salaries per state, city, street - with rollup, grouping & group by.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query15" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 15</a>
+    <br>
+    <p style="margin-left: 25px;"><b>OLAP query to display avg of employee salaries per state, city, street - with rollup, grouping & group by.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query16" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 16</a>
+    <br>
+    <p style="margin-left: 25px;"><b>OLAP query to display avg of customer age salaries per state, city, street - with rollup, grouping & group by.</b></p>
+    <a style="margin-left: 25px; margin-bottom: 25px;" href="http://127.0.0.1:5000/Query17" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 17</a>
+    <br>
+
+    <!-- <p>The average cost of items for all premium users</p>
+    <a href="http://127.0.0.1:5000/Query8" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 8</a>
+    <br>
+    <p>Display all those courier details for delivered orders</p>
+    <a href="http://127.0.0.1:5000/Query9" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 9</a>
+    <br>
+    <p>Increase the salary of all employees working for more than 6 years by 10000</p>
+    <a href="http://127.0.0.1:5000/Query10" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Query 10</a> -->
+
+    
+{% endblock %}

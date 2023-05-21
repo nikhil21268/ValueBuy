@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-image: url('/static/images/slider-bg.jpg');
+      background-position: center top;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      padding-top: 0px; /* adjust this value to push the content down */
+    }
+  </style>
+  <title>Admin Page</title>
+</head>
+<body>
+  <h1>Admin Page - Customers</h1>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    
+    td, th {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    </style>
+  <table>
+    <thead>
+      <tr>
+        <th>c_id</th>
+        <th>cust_first_name</th>
+        <th>cust_last_name</th>
+        <th>cust_dob</th>
+        <th>cust_street</th>
+        <th>cust_city</th>
+        <th>cust_state</th>
+        <th>cust_pin</th>
+        <th>cust_title</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for customer in customers %}
+      <tr>
+        <td>{{ customer.c_id }}</td>
+        <td>{{ customer.cust_first_name }}</td>
+        <td>{{ customer.cust_last_name }}</td>
+        <td>{{ customer.cust_dob }}</td>
+        <td>{{ customer.cust_street }}</td>
+        <td>{{ customer.cust_city }}</td>
+        <td>{{ customer.cust_state }}</td>
+        <td>{{ customer.cust_pin }}</td>
+        <td>{{ customer.cust_title }}</td>
+        <td>
+          <form action="{{ url_for('delete_customer', customer_id=customer.c_id) }}" method="POST">
+            <button type="submit">Delete</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  
+  <!-- <h2>Add Customer</h2>
+  <form action="{{ url_for('add_customer') }}" method="POST">
+
+
+    <label for="cust_first_name">cust_first_name:</label>
+    <input type="text" id="cust_first_name" name="cust_first_name"><br>
+
+    <label for="cust_last_name">cust_last_name:</label>
+    <input type="text" id="cust_last_name" name="cust_last_name"><br>
+
+    <label for="cust_dob">cust_dob:</label>
+    <input type="date" id="cust_dob" name="cust_dob"><br>
+
+    <label for="cust_street">cust_street:</label>
+    <input type="text" id="cust_street" name="cust_street"><br>
+
+    <label for="cust_city">cust_city:</label>
+    <input type="text" id="cust_city" name="cust_city"><br>
+
+    <label for="cust_state">cust_state:</label>
+    <input type="text" id="cust_state" name="cust_state"><br>
+
+    <label for="cust_pin">cust_pin:</label>
+    <input type="number" id="cust_pin" name="cust_pin"><br>
+
+    <label for="cust_title">cust_title:</label>
+    <input type="text" id="cust_title" name="cust_title"><br>
+
+    <button type="submit">Add Customer</button>
+  </form> -->
+
+</body>
+</html>

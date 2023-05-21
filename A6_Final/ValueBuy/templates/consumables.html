@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>E-COMMERCE SITE ValueBuy</title>
+    <link rel="{{ url_for('static',filename = 'stylesheet" type="text/css" href="static/table1.css')}}" />
+</head>
+    <body>
+    <table border bgcolor="aqua" border = "20" align="center" width = "70%" >
+        {% for s in list %}
+            <tr>
+            {% for i in s %}
+                <td>{{i}}</td>
+            {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+    </body>
+</html>

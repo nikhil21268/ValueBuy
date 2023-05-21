@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Page</title>
+  <style>
+    body {
+      background-image: url('/static/images/slider-bg.jpg');
+      background-position: center top;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      padding-top: 0px; /* adjust this value to push the content down */
+    }
+  </style>
+</head>
+<body>
+  <a href="{{ url_for('logout_admin') }}" style="position:absolute; top:10px; right:10px;">Logout</a>
+<a href="{{ url_for('admin_customers') }}" style="position:absolute; top:10px; right:120px;">Customers</a>
+<a href="{{ url_for('admin_employees') }}" style="position:absolute; top:10px; right:230px;">Employees</a>
+
+
+  <!-- <img src="/static/images/slider-bg.jpg" alt="description of the image"> -->
+
+  <!-- {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <div class="messages">
+        {% for message, category in messages %}
+          <div class="message {{ category }}">{{ message }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %} -->
+
+  <!-- {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <div class="messages">
+        {% for message in messages %}
+          <div class="message">{{ message }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %} -->
+
+
+
+  <h1>Admin Page</h1>
+  
+  <h2>Products</h2>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    
+    td, th {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    </style>
+  <table>
+    <thead>
+      <tr>
+        <th>p_id</th>
+        <th>date_of_mfg</th>
+        <th>prod_name</th>
+        <th>price</th>
+        <th>qty</th>
+        <th>net_weight</th>
+        <th>manufacturing_company</th>
+        <th>prod_type</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for product in products %}
+      <tr>
+        <td>{{ product.p_id }}</td>
+        <td>{{ product.date_of_mfg }}</td>
+        <td>{{ product.prod_name }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.qty }}</td>
+        <td>{{ product.net_weight }}</td>
+        <td>{{ product.manufacturing_company }}</td>
+        <td>{{ product.prod_type }}</td>
+        <td>
+          <form action="{{ url_for('delete_product', product_id=product.p_id) }}" method="POST">
+            <button type="submit">Delete</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  
+  <!-- <h2>Add Product</h2>
+  <form action="{{ url_for('add_product') }}" method="POST">
+    <label for="prod_name">Name:</label>
+    <input type="text" id="prod_name" name="prod_name"><br>
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price"><br>
+    <button type="submit">Add Product</button>
+  </form> -->
+  <h2>Add Product</h2>
+  <form action="{{ url_for('add_product') }}" method="POST">
+
+    <!-- <label for="p_id">p_id:</label>
+    <input type="number" id="p_id" name="p_id"><br> -->
+
+    <label for="prod_name">Product Name:</label>
+    <input type="text" id="prod_name" name="prod_name"><br>
+    
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price"><br>
+    
+    <label for="qty">Quantity:</label>
+    <input type="number" id="qty" name="qty"><br>
+    
+    <label for="net_weight">Net Weight:</label>
+    <input type="text" id="net_weight" name="net_weight"><br>
+    
+    <label for="date_of_mfg">Date of Manufacturing:</label>
+    <input type="date" id="date_of_mfg" name="date_of_mfg"><br>
+    
+    <label for="manufacturing_company">Manufacturing Company:</label>
+    <input type="text" id="manufacturing_company" name="manufacturing_company"><br>
+    
+    <label for="prod_type">Product Type:</label>
+    <select id="prod_type" name="prod_type">
+      <option value="consumbles">Consumbles</option>
+      <option value="clothing">Clothing</option>
+      <option value="electronics">Electronics</option>
+      <option value="cosmetics">Cosmetics</option>
+    </select><br>
+    
+    <button type="submit">Add Product</button>
+  </form>
+
+  
+</body>
+</html>
