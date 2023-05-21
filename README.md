@@ -4,6 +4,7 @@
 ![success_login](https://github.com/nikhil21268/ValueBuy/assets/108420113/558544da-454d-447d-895c-32562e614dc7)
 ![queries_assmt](https://github.com/nikhil21268/ValueBuy/assets/108420113/3709bffe-e015-434e-8ec1-be084c5169a1)
 ![prods](https://github.com/nikhil21268/ValueBuy/assets/108420113/d257facc-25a0-473c-94fa-b7310a8de68f)
+![prods_add_to_cart](https://github.com/nikhil21268/ValueBuy/assets/108420113/3af270cd-7106-49ee-9180-f5ca57223834)
 ![cart](https://github.com/nikhil21268/ValueBuy/assets/108420113/ee7540c5-7a85-48a5-be24-3da9c688ad1e)
 ![upgrade_membership](https://github.com/nikhil21268/ValueBuy/assets/108420113/dd50685a-4f88-496d-9e9a-6fdabf99c813)
 ![admin](https://github.com/nikhil21268/ValueBuy/assets/108420113/0c809db2-9185-4918-8837-a3f27154c55d)
