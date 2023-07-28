@@ -1,5 +1,5 @@
 # ValueBuy
-![login_signup](login_signup.png)
+![login_signup](/login_signup.png)
 ![signup](signup.png)
 ![queries_assmt](queries_assmt.png)
 ![prods](prods.png)
