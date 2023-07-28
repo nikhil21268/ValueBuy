@@ -1,5 +1,5 @@
 # ValueBuy
-![login_signup](/login_signup.png)
+![login_signup](https://github.com/nikhil21268/ValueBuy/blob/main/login_signup.PNG)
 ![signup](signup.png)
 ![queries_assmt](queries_assmt.png)
 ![prods](prods.png)
