@@ -13,13 +13,13 @@ Built an E-Commerce Store using MySQL at the back-end & Python, Flask, HTML, CSS
 
 ## Screenshots
 
-![login_signup](https://github.com/nikhil21268/ValueBuy/blob/main/login_signup.PNG)
-![signup](https://github.com/nikhil21268/ValueBuy/blob/main/signup.PNG)
-![queries_assmt](https://github.com/nikhil21268/ValueBuy/blob/main/queries_assmt.PNG)
-![prods](https://github.com/nikhil21268/ValueBuy/blob/main/prods.PNG)
-![prods_add_to_cart](https://github.com/nikhil21268/ValueBuy/blob/main/prods_2.PNG)
-![cart](https://github.com/nikhil21268/ValueBuy/blob/main/cart.PNG)
-![upgrade_membership](https://github.com/nikhil21268/ValueBuy/blob/main/upgrade_membership.PNG)
-![admin](https://github.com/nikhil21268/ValueBuy/blob/main/admin.PNG)
+![login_signup](https://github.com/nikhil21268/ValueBuy/blob/main/Screenshots/loginSignUp.PNG)
+![signup](https://github.com/nikhil21268/ValueBuy/blob/main/Screenshots/signUp.PNG)
+![queries_assmt](https://github.com/nikhil21268/ValueBuy/blob/main/Screenshots/queries.PNG)
+![prods](https://github.com/nikhil21268/ValueBuy/blob/main/Screenshots/products1.PNG)
+![prods_add_to_cart](https://github.com/nikhil21268/ValueBuy/blob/main/Screenshots/products2.PNG)
+![cart](https://github.com/nikhil21268/ValueBuy/blob/main/Screenshots/cart.PNG)
+![upgrade_membership](https://github.com/nikhil21268/ValueBuy/blob/main/Screenshots/upgradeMembership.PNG)
+![admin](https://github.com/nikhil21268/ValueBuy/blob/main/Screenshots/admin.PNG)
 
 
