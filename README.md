@@ -13,7 +13,7 @@ Built an E-Commerce Store using MySQL at the back-end & Python, Flask, HTML, CSS
 
 ## Screenshots
 
-![login_signup](https://github.com/nikhil21268/ValueBuy/blob/main/Screenshots/loginSignUp.PNG)
+![login_signup](https://github.com/nikhil21268/ValueBuy/blob/main/Screenshots/loginSignup.PNG)
 ![signup](https://github.com/nikhil21268/ValueBuy/blob/main/Screenshots/signUp.PNG)
 ![queries_assmt](https://github.com/nikhil21268/ValueBuy/blob/main/Screenshots/queries.PNG)
 ![prods](https://github.com/nikhil21268/ValueBuy/blob/main/Screenshots/products1.PNG)
