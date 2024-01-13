@@ -5,9 +5,9 @@ Built an E-Commerce Store using MySQL at the back-end & Python, Flask, HTML, CSS
 
 
 ## Deployment
-* Run MySQL_Data/MySQL_ToRun.sql in MySQL Workbench.
-* To deploy the project run demo.py and app.py in the ValueBuy sub-directory.
-* If the code doesn't run for some reason, double-check the path mentioned in the demo.py and app.py files, and update if required.
+* Run **MySQL_Data/MySQL_ToRun.sql** in MySQL Workbench.
+* To deploy the project run **demo.py** and **app.py** in the ValueBuy sub-directory.
+* If the code doesn't run for some reason, double-check the path mentioned in the **demo.py** and **app.py** files, and update if required.
 
 
 
